@@ -29,7 +29,7 @@
         <li class="nav-item">
             <a class="nav-link" href="/info">
                 <i class="fa fa-calculator nav-icon" aria-hidden="true"></i>
-                {{ __('Network calculating') }}
+                {{ __('Data') }}
             </a>
         </li>
 

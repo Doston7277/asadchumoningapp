@@ -5,31 +5,16 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Info') }} <button class="btn btn-outline-success"><a href="/info_create">+</a></button></div>
+                    <div class="card-header">{{ __('Info') }}</div>
 
                     <div class="card-body">
 
                     <div class="container">
 
-                    <div class="row">
-                        @foreach($datas as $data)
-                        <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                            <p class="card-text">{{ $data->title}} </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/info/{{ $data->id }}">View</a></button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        @endforeach
-                    </div>
+                        <h3>{{$data->title}}</h3>
 
+                        <p>{{$data->body}}</p>
                     </div>
-
                 </div>
             </div>
         </div>
